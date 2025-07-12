@@ -3,39 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sabores de Panamá 🇵🇦</title>
+  <title>Sabores de Panamá</title>
   <style>
     body {
+      margin: 0;
       font-family: 'Segoe UI', sans-serif;
+      background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
       background-color: #fefaf6;
       color: #333;
-      padding: 40px;
-      max-width: 800px;
-      margin: auto;
-      line-height: 1.6;
     }
-    h1 {
+
+    header {
+      background-color: #d13434;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      color: white;
       text-align: center;
-      color: #d13434;
+      font-size: 28px;
     }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffe5e5;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
     h2 {
       color: #007acc;
       margin-top: 50px;
     }
+
     .item {
-      margin-bottom: 50px;
+      margin-bottom: 60px;
     }
+
     img {
       max-width: 100%;
       border-radius: 10px;
       margin-top: 10px;
     }
-    .footer {
-      text-align: center;
-      font-size: 14px;
-      margin-top: 50px;
-      color: #777;
-    }
+
     .receta {
       background-color: #fff;
       padding: 15px;
@@ -43,114 +78,167 @@
       margin-top: 10px;
       border-radius: 5px;
     }
+
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 20px;
+      color: #777;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ol {
+      padding-left: 20px;
+    }
   </style>
 </head>
 <body>
 
-  <h1> Sabores de Panamá </h1>
+  <header>
+    <h1>🍽️ Sabores de Panamá 🇵🇦</h1>
+    <nav>
+      <a href="#comidas">Comidas</a>
+      <a href="#bebidas">Bebidas</a>
+      <a href="#postres">Postres</a>
+    </nav>
+  </header>
 
-  <p>Bienvenidos a nuestro rincón culinario donde celebramos la riqueza gastronómica de Panamá. Aquí encontrarás algunas de las recetas más tradicionales del país, llenas de sabor, historia y cultura. ¡Prepárate para antojarte!</p>
+  <div class="container">
+    <p>¡Bienvenido a <strong>Sabores de Panamá</strong>! Explora las delicias tradicionales de nuestra tierra, desde platos principales llenos de sabor hasta postres y bebidas refrescantes que reflejan la diversidad cultural panameña.</p>
 
-  <h2>🥘 Comidas Típicas</h2>
+    <h2 id="comidas">🥘 Comidas Típicas</h2>
 
-  <div class="item">
-    <h3>Sancocho Panameño</h3>
-    <p>El sancocho es uno de los platos más representativos de la cocina panameña. Se trata de una sopa espesa hecha a base de pollo, ñame, culantro y otros ingredientes que varían según la región.</p>
-    <img src="https://i.pinimg.com/1200x/23/54/36/235436e825bbdb99b267dfdb081f8c86.jpg" alt="Sancocho panameño">
-    <div class="receta">
-      <strong>Ingredientes:</strong>
-      <ul>
-        <li>1 pollo entero en presas</li>
-        <li>2 libras de ñame pelado y troceado</li>
-        <li>2 mazorcas de maíz en trozos</li>
-        <li>1 cebolla</li>
-        <li>2 dientes de ajo</li>
-        <li>Hojas de culantro al gusto</li>
-        <li>Sal y pimienta</li>
-      </ul>
-      <strong>Preparación:</strong>
-      <ol>
-        <li>En una olla grande, hierve el pollo con agua, cebolla y ajo.</li>
-        <li>Añade el ñame y el maíz, cocina a fuego medio hasta que estén suaves.</li>
-        <li>Agrega el culantro, sal y pimienta. Cocina 15 minutos más.</li>
-        <li>Sirve caliente acompañado de arroz blanco.</li>
-      </ol>
+    <div class="item">
+      <h3>Sancocho Panameño</h3>
+      <p>Una sopa caliente, sabrosa y reconfortante. El sancocho es uno de los platos nacionales más queridos.</p>
+      <img src="https://i.pinimg.com/1200x/23/54/36/235436e825bbdb99b267dfdb081f8c86.jpg" alt="Sancocho panameño">
+      <div class="receta">
+        <strong>Ingredientes:</strong>
+        <ul>
+          <li>1 pollo entero troceado</li>
+          <li>2 libras de ñame</li>
+          <li>2 mazorcas de maíz</li>
+          <li>1 cebolla</li>
+          <li>Culantro, ajo, sal y pimienta</li>
+        </ul>
+        <strong>Preparación:</strong>
+        <ol>
+          <li>Hierve el pollo con cebolla y ajo.</li>
+          <li>Añade el ñame y el maíz.</li>
+          <li>Agrega culantro y condimentos. Cocina hasta que todo esté tierno.</li>
+        </ol>
+      </div>
     </div>
-  </div>
 
-  <div class="item">
-    <h3>Arroz con Guandú y Coco</h3>
-    <p>Este arroz es un acompañante infaltable durante las festividades panameñas, especialmente en Navidad. El sabor del coco le da un toque tropical y muy especial.</p>
-    <img src="https://i.pinimg.com/1200x/6c/2e/ab/6c2eab1bc08937f2a453a25f8e339b05.jpg" alt="Arroz con guandú">
-    <div class="receta">
-      <strong>Ingredientes:</strong>
-      <ul>
-        <li>2 tazas de arroz</li>
-        <li>1 taza de guandú cocido</li>
-        <li>1 lata de leche de coco</li>
-        <li>2 dientes de ajo</li>
-        <li>1/2 cebolla picada</li>
-        <li>Sal al gusto</li>
-      </ul>
-      <strong>Preparación:</strong>
-      <ol>
-        <li>Sofríe la cebolla y el ajo en un poco de aceite.</li>
-        <li>Agrega el guandú, la leche de coco y una taza de agua.</li>
-        <li>Incorpora el arroz y sal. Cocina a fuego medio hasta que seque.</li>
-        <li>Baja el fuego y tapa, deja cocinar 20 minutos más.</li>
-      </ol>
+    <div class="item">
+      <h3>Arroz con Guandú y Coco</h3>
+      <p>Platillo tradicional navideño con sabor tropical gracias al coco y el guandú.</p>
+      <img src="https://i.pinimg.com/1200x/6c/2e/ab/6c2eab1bc08937f2a453a25f8e339b05.jpg" alt="Arroz con guandú">
+      <div class="receta">
+        <strong>Ingredientes:</strong>
+        <ul>
+          <li>2 tazas de arroz</li>
+          <li>1 taza de guandú cocido</li>
+          <li>1 lata de leche de coco</li>
+          <li>Ajo, cebolla y sal</li>
+        </ul>
+        <strong>Preparación:</strong>
+        <ol>
+          <li>Sofríe cebolla y ajo, añade el guandú y la leche de coco.</li>
+          <li>Agrega el arroz y agua. Cocina hasta que esté seco.</li>
+          <li>Tapa y cocina a fuego bajo 20 minutos.</li>
+        </ol>
+      </div>
     </div>
-  </div>
 
-  <h2>🍹 Bebidas Típicas</h2>
-
-  <div class="item">
-    <h3>Limonada con Raspadura</h3>
-    <p>Refrescante y natural, esta bebida es perfecta para los días calurosos. La raspadura, elaborada con jugo de caña, le da un sabor único.</p>
-    <img src="https://i.pinimg.com/1200x/9a/1e/7b/9a1e7bb4089c3e840995a3e45e590bb5.jpg" alt="Limonada con raspadura">
-    <div class="receta">
-      <strong>Ingredientes:</strong>
-      <ul>
-        <li>1 litro de agua fría</li>
-        <li>Jugo de 4 limones</li>
-        <li>1/2 taza de raspadura rallada</li>
-        <li>Hielo al gusto</li>
-      </ul>
-      <strong>Preparación:</strong>
-      <ol>
-        <li>Mezcla el jugo de limón con el agua en una jarra.</li>
-        <li>Añade la raspadura y revuelve hasta disolver.</li>
-        <li>Agrega hielo y sirve bien fría.</li>
-      </ol>
+    <div class="item">
+      <h3>Carimañolas</h3>
+      <p>Frituras de yuca rellenas de carne molida o queso, crujientes por fuera y suaves por dentro.</p>
+      <img src="https://www.recetaspanama.com/wp-content/uploads/2020/01/carimanola.jpg" alt="Carimañolas">
+      <div class="receta">
+        <strong>Ingredientes:</strong>
+        <ul>
+          <li>2 libras de yuca cocida</li>
+          <li>1 taza de carne molida sazonada</li>
+          <li>Sal, ajo, aceite para freír</li>
+        </ul>
+        <strong>Preparación:</strong>
+        <ol>
+          <li>Haz un puré con la yuca y forma bolitas rellenas con carne.</li>
+          <li>Fríelas en aceite caliente hasta que estén doradas.</li>
+        </ol>
+      </div>
     </div>
-  </div>
 
-  <div class="item">
-    <h3>Chicheme</h3>
-    <p>El chicheme es una bebida cremosa y dulce, hecha con maíz cocido y especias como la canela. Tradicionalmente se toma fría, ideal para compartir en familia.</p>
-    <img src="https://i.pinimg.com/736x/4a/e0/15/4ae01597937e483fa22be0e5dfd287fb.jpg" alt="Chicheme">
-    <div class="receta">
-      <strong>Ingredientes:</strong>
-      <ul>
-        <li>2 tazas de maíz pilado cocido</li>
-        <li>1 litro de leche</li>
-        <li>1/2 taza de azúcar</li>
-        <li>1 cucharadita de canela en polvo</li>
-        <li>1 pizca de nuez moscada</li>
-      </ul>
-      <strong>Preparación:</strong>
-      <ol>
-        <li>Licúa el maíz con un poco de leche hasta que quede cremoso.</li>
-        <li>Hierve esta mezcla junto con el resto de la leche, azúcar y especias.</li>
-        <li>Cocina a fuego lento por 20 minutos, moviendo constantemente.</li>
-        <li>Deja enfriar y sirve con hielo.</li>
-      </ol>
+    <h2 id="bebidas">🍹 Bebidas Típicas</h2>
+
+    <div class="item">
+      <h3>Limonada con Raspadura</h3>
+      <p>Limonada fresca endulzada con raspadura de caña de azúcar, perfecta para el clima cálido.</p>
+      <img src="https://i.pinimg.com/1200x/9a/1e/7b/9a1e7bb4089c3e840995a3e45e590bb5.jpg" alt="Limonada con raspadura">
+      <div class="receta">
+        <strong>Ingredientes:</strong>
+        <ul>
+          <li>1 litro de agua fría</li>
+          <li>Jugo de 4 limones</li>
+          <li>1/2 taza de raspadura rallada</li>
+        </ul>
+        <strong>Preparación:</strong>
+        <ol>
+          <li>Mezcla todo hasta disolver la raspadura.</li>
+          <li>Sirve con hielo.</li>
+        </ol>
+      </div>
     </div>
-  </div>
 
-  <div class="footer">
-    © 2025 Blog Sabores de Panamá - Compartiendo cultura a través de la cocina
+    <div class="item">
+      <h3>Chicheme</h3>
+      <p>Bebida tradicional de maíz con leche y especias, cremosa y deliciosa.</p>
+      <img src="https://i.pinimg.com/736x/4a/e0/15/4ae01597937e483fa22be0e5dfd287fb.jpg" alt="Chicheme">
+      <div class="receta">
+        <strong>Ingredientes:</strong>
+        <ul>
+          <li>2 tazas de maíz pilado cocido</li>
+          <li>1 litro de leche</li>
+          <li>Azúcar, canela y nuez moscada</li>
+        </ul>
+        <strong>Preparación:</strong>
+        <ol>
+          <li>Licúa el maíz con leche, agrega azúcar y especias.</li>
+          <li>Hierve y enfría antes de servir.</li>
+        </ol>
+      </div>
+    </div>
+
+    <h2 id="postres">🍮 Postres Típicos</h2>
+
+    <div class="item">
+      <h3>Dulce de Nance</h3>
+      <p>Fruta tropical cocida en almíbar. Un postre dulce y ácido muy típico.</p>
+      <img src="https://www.recetaspanama.com/wp-content/uploads/2019/11/dulce-de-nance.jpg" alt="Dulce de nance">
+      <div class="receta">
+        <strong>Ingredientes:</strong>
+        <ul>
+          <li>2 tazas de nance</li>
+          <li>1 taza de azúcar</li>
+          <li>1 taza de agua</li>
+          <li>Canela en rama</li>
+        </ul>
+        <strong>Preparación:</strong>
+        <ol>
+          <li>Hierve el agua con azúcar y canela.</li>
+          <li>Añade el nance y cocina 30 minutos hasta que espese.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="footer">
+      © 2025 Blog Sabores de Panamá – Cultura que se saborea 🍴
+    </div>
   </div>
 
 </body>
-</html> 
+</html>
